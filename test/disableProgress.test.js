@@ -59,8 +59,8 @@
     test('plugin api methods exist', function() {
         expect(2);
         this.player.disableProgress();
-        ok(this.player.disableProgress.disable, 'disable exists');
-        ok(this.player.disableProgress.enable, 'enable exists');
+        ok(this.player.controlProgress.disable, 'disable exists');
+        ok(this.player.controlProgress.enable, 'enable exists');
     });
 
     test('autoDisable option can be overridden to true', function() {
@@ -69,7 +69,7 @@
           autoDisable: true
         });
 
-        strictEqual(this.player.disableProgress.getState(), true, 'returns true');
+        strictEqual(this.player.controlProgress.getState(), true, 'returns true');
     });
 
     test('autoDisable option can be overridden to false', function() {
@@ -78,7 +78,7 @@
           autoDisable: false
         });
 
-        strictEqual(this.player.disableProgress.getState(), false, 'returns false');
+        strictEqual(this.player.controlProgress.getState(), false, 'returns false');
     });
 
 }(window.videojs));
