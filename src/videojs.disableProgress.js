@@ -41,7 +41,7 @@
         settings = extend({}, defaults, options || {});
 
       // disable / enable methods
-      player.disableProgress = {
+      player.controlProgress = {
         disable: function() {
             state = true;
             player.controlBar.progressControl.seekBar.off("mousedown");
@@ -61,7 +61,7 @@
 
       if(settings.autoDisable)
       {
-        player.disableProgress.disable();
+        player.controlProgress.disable();
       }
     };
 

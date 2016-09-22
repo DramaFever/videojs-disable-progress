@@ -14,10 +14,10 @@ videojs("example_video_1").ready(function () {
     this.disableProgress();
 
     if(enabled){
-       this.disableProgress.enable();
+       this.controlProgress.enable();
     }
     else{
-        this.disableProgress.disable();
+        this.controlProgress.disable();
     }
 });
 ```
@@ -42,10 +42,10 @@ videojs("example_video_1").ready(function () {
   player.disableProgress();
 
   //something changes where you need to disable:
-  player.disableProgress.disable();
+  player.controlProgress.disable();
 
   //some awesome event happens when you need to enable:
-  player.disableProgress.enable()
+  player.controlProgress.enable()
 });
 ```
 
